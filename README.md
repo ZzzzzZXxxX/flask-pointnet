@@ -1,5 +1,5 @@
 # Flask-PointNet
-此版本为PointNet的Web实现，能对3D对象(off文件)可视化，以及预测类别。如果只需对[ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip "With a Title")off文件进行训练，预测类别，可参考此项目的[Core](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip "With a Title")版本。
+此版本为PointNet的Web实现，能对3D对象(off文件)可视化，以及预测类别。如果只需对[ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip "With a Title")off文件进行训练，预测类别，可参考此项目的[Core](https://github.com/ZzzzzZXxxX/pointnet-keras "With a Title")版本。
 # 快速部署
 
 ### 前提条件
