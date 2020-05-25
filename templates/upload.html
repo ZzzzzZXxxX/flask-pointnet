@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/up.css">
+    <script type="text/javascript">function hello()    //创建函数
+        {
+            alert("开始上传，点击确定开始预测，时间较长请稍后！");    //弹出窗口
+        }</script>
+    <title>上传文件</title>
+</head>
+<body>
+<div>
+    <h1>请上传off文件</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file">
+        <input type="submit" value="上传" onclick="hello()">
+    </form>
+</div>
+
+<div  {{ style }}>
+    <h2>预测类别：{{ name }}</h2>
+    <img src="{{ path }}" alt="采样后点云图">
+
+<form action="http://127.0.0.1:5000/list/1" method="post">
+    <input type="submit" value="搜索同类文件" style="align-content: center">
+</form>
+</div>
+
+</body>
+
+</html>

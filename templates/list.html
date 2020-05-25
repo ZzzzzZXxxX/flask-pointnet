@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/up.css">
+    <title>同类别文件列表</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>类别</th>
+        <th>文件名</th>
+        <th>操作</th>
+    </tr>
+    {% for i in infos %}
+        <tr>
+            <td>{{ i.label }}</td>
+            <td>{{ i.f_name }}</td>
+            <td>
+                <a href="http://127.0.0.1:5000/{{ i.f_path }}">下载</a>
+                <a href="http://127.0.0.1:5000/show/{{ i.f_name }}" target="_blank">显示图片</a>
+
+                </td>
+        </tr>
+    {% endfor %}
+</table>
+
+    {% import 'pages.html' as pg %}
+    {{ pg.my_paginate(pagination,'list') }}
+
+
+
+</body>
+</html>

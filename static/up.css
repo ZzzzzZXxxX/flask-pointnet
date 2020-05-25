@@ -1,0 +1,119 @@
+.left{
+    width: 50%;
+	height: 100%;
+	
+
+}
+.right{
+
+
+}
+
+.pagination-outer{ text-align: center; }
+.pagination{
+
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    position: relative;
+    list-style-type:none;
+    justify-content: center;
+}
+.pagination li a.page-link{
+    color: #10ac84;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px 10px;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease 0s;
+}
+.pagination li.active a.page-link,
+.pagination li a.page-link:hover,
+.pagination li.active a.page-link:hover{
+    color: #fff;
+    background-color: #10ac84;
+}
+.pagination li:first-child a.page-link:hover,
+.pagination li:last-child a.page-link:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.pagination li a.page-link:before{
+    content: attr(data-hover);
+    color: rgba(255,255,255,0.2);
+    font-size: 80px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:hover:before,
+.pagination li.active a.page-link:before{
+    opacity: 1;
+    top: 10px;
+}
+@media only screen and (max-width: 480px){
+    .pagination{ display: block; }
+    .pagination li{
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
+
+table
+
+        {
+
+            border-collapse: collapse;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+        table td, table th
+
+        {
+
+            border: 1px solid #cad9ea;
+
+            color: #666;
+
+            height: 30px;
+
+        }
+
+        table thead th
+
+        {
+
+            background-color: #CCE8EB;
+
+            width: 100px;
+
+        }
+
+        table tr:nth-child(odd)
+
+        {
+
+            background: #fff;
+
+        }
+
+        table tr:nth-child(even) {
+
+            background: #F5FAFA;
+        }
+
+
